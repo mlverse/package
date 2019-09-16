@@ -1,9 +1,9 @@
-#' Install Multiverse
+#' Install TensorFlow, Spark and MLflow
 #'
-#' Installs all multiverse runtime dependencies.
+#' Installs all 'mlverse' runtime dependencies.
 #'
 #' @export
-install_multiverse <- function() {
+install_mlverse <- function() {
   sparklyr::spark_install(version = "2.3")
   tensorflow::install_tensorflow()
   keras::install_keras()

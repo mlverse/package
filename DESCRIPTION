@@ -1,17 +1,22 @@
-Package: multiverse
+Package: mlverse
 Type: Package
-Title: Easily Install and Load the 'Multiverse'
+Title: Easily Install and Load TensorFlow, Spark and MLflow
 Version: 0.1.0
 Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: A set of packages to scale data science workflows.
+Description: A set of packages to scale data science workflows. Enables
+  installing TensorFlow, Keras, Apache Spark, MLflow and Apache Arrow from
+  a single package.
 License: MIT
 Encoding: UTF-8
 LazyData: true
 Imports:
+  arrow,
   keras,
   mlflow,
+  pins,
   sparklyr,
   tensorflow,
   tfdatasets
 RoxygenNote: 6.1.1
+SystemRequirements: TensorFlow (https://www.tensorflow.org/) Spark (https://spark.apache.org/)  MLflow (https://www.mlflow.org/) C++11 
